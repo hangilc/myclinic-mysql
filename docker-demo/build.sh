@@ -1,1 +1,1 @@
-docker build -t myclinic-mysql-demo .
+docker build -t hangilc/myclinic-mysql-demo .
