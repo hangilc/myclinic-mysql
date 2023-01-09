@@ -1,0 +1,7 @@
+[mysqld]
+bind-address=0.0.0.0
+character-set-server=utf8mb4
+default-storage-engine=INNODB
+sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"
+innodb_buffer_pool_size = 256M
+innodb_log_file_size = 64M
