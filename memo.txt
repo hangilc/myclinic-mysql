@@ -1,0 +1,7 @@
+mysql server からテーブル仕様だけをダウンロードする。
+
+> mysqldump -h HOST -u USER -p --single-transaction --no-data DATABASE > OUTPUT
+
+mysql server からデータだけをダウンロードする（'CREATE TABLE ...' を出力しない）。
+
+> mysqldump -h HOST -u USER -p --single-transaction --no-create-info --no-tablespaces DATABASE > OUTPUT
