@@ -5,5 +5,6 @@ ENV MYSQL_ROOT_PASSWORD=pass \
     MYSQL_DATABASE=myclinic 
 COPY ./mysql-myclinic.cnf /etc/mysql/mysql.conf.d/mysql-myclinic.cnf
 COPY ./tables.sql /docker-entrypoint-initdb.d/a-tables.sql
+COPY ./add-onshi-table.sql /docker-entrypoint-initdb.d/b-add-onshi.sql
 COPY ./data.sql /docker-entrypoint-initdb.d/b-data.sql
 
