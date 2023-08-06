@@ -10,8 +10,5 @@ COPY ./02-add-memo-to-kouhi.sql /docker-entrypoint-initdb.d/02-add-memo-to-kouhi
 COPY ./03-add-memo-to-patient.sql /docker-entrypoint-initdb.d/03-add-memo-to-patient.sql
 COPY ./04-add-memo-to-shinryou.sql /docker-entrypoint-initdb.d/04-add-memo-to-shinryou.sql
 COPY ./05-alter-visit-attributes-to-json.sql /docker-entrypoint-initdb.d/05-alter-visit-attributes-to-json.sql
-COPY ./06-add-memo-to-conduct-shinryou.sql /docker-entrypoint-initdb.d/00-tables.sql
-# COPY ./tables.sql /docker-entrypoint-initdb.d/00-tables.sql
-# COPY ./add-onshi-table.sql /docker-entrypoint-initdb.d/b-add-onshi.sql
-# COPY ./add-memo-to-kouhi.sql /docker-entrypoint-initdb.d/c-add-memo-to-kouhi.sql
+COPY ./06-add-memo-to-conduct-shinryou.sql /docker-entrypoint-initdb.d/06-add-memo-to-conduct-shinryou.sql
 COPY ./data.sql /docker-entrypoint-initdb.d/z-data.sql
