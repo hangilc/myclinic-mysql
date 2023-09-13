@@ -11,4 +11,5 @@ COPY ./03-add-memo-to-patient.sql /docker-entrypoint-initdb.d/03-add-memo-to-pat
 COPY ./04-add-memo-to-shinryou.sql /docker-entrypoint-initdb.d/04-add-memo-to-shinryou.sql
 COPY ./05-alter-visit-attributes-to-json.sql /docker-entrypoint-initdb.d/05-alter-visit-attributes-to-json.sql
 COPY ./06-add-memo-to-conduct-shinryou.sql /docker-entrypoint-initdb.d/06-add-memo-to-conduct-shinryou.sql
+COPY ./07-convert-app-event-data-to-json.sql /docker-entrypoint-initdb.d/07-convert-app-event-data-to-json.sql
 COPY ./data.sql /docker-entrypoint-initdb.d/z-data.sql
