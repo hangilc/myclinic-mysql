@@ -1,0 +1,6 @@
+2025-02-01
+「医療ＤＸ推進体制整備加算（初診）」と「医療ＤＸ推進体制整備加算（医学管理等）」を失効させる。
+> update shinryoukoui_master_arch set valid_upto = '2025-01-31' where 
+    ( name = '医療ＤＸ推進体制整備加算（初診）' or
+    name = '医療ＤＸ推進体制整備加算（医学管理等）' ) and 
+    valid_upto = '0000-00-00';
