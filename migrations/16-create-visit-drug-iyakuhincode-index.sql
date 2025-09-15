@@ -1,0 +1,1 @@
+create index idx_visit_drug_iyakuhincode on visit_drug(d_iyakuhincode);
