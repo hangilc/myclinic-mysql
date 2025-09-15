@@ -5,3 +5,10 @@ mysql server からテーブル仕様だけをダウンロードする。
 mysql server からデータだけをダウンロードする（'CREATE TABLE ...' を出力しない）。
 
 > mysqldump -h HOST -u USER -p --single-transaction --no-create-info --no-tablespaces DATABASE > OUTPUT
+
+delete unused master except currently active ones
+
+mysql> delete m from iyakuhin_master_arch as m left outer join (visit_drug as d join visit as v on d.visit_id = v.visit_id) 
+  on m.iyakuhincode = d.d_iyakuhincode and m.valid_from <= date(v.v_datetime)
+    and (m.valid_upto = '0000-00-00' or date(v.v_datetime) <= m.valid_upto) 
+  where d.d_iyakuhincode is NULL and m.valid_upto <> '0000-00-00';
