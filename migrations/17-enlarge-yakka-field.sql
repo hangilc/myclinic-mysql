@@ -1,0 +1,1 @@
+ALTER TABLE iyakuhin_master_arch MODIFY yakka VARCHAR(15);
