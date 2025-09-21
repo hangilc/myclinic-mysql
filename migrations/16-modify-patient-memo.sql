@@ -1,0 +1,1 @@
+alter table patient modify column phone varchar(80);
